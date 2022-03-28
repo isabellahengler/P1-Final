@@ -9,17 +9,43 @@
 </head>
 <center>
 
-  <body> 
+  
+<!--   <body onload="displayInfo()">  -->
     <h1>Employee Information</h1> 
-	
-	
+    
+   <!--  
 	<div class="container" id="formDiv">
     	
-	<label for="userName">Enter Username to view/edit Info :</label><br>
-	 <!-- <div class="txt_field">
+    	<table id="table" class="table table-hover">
+      <thead>
+        <tr>
+          <th class="text-center">Id</th>
+          <th class="text-center">Username</th>
+          <th class="text-center">Password</th>
+          <th class="text-center">First Name</th>
+          <th class="text-center">Last Name</th>
+          <th class="text-center">Email</th>
+          
+
+          
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        Data dynamically populated
+     
+        
+      </tbody>
+    </table>
+  </div> -->
+	
+	
+<!-- <!-- 	<div class="container" id="formDiv">
+    	
+	<label for="userName">Enter Username to view/edit Info :</label><br> -->
+	 <div class="txt_field">
       <input type="text" id="Enter Username to view/edit Info"required>
       <label>Enter Username to view/edit Info</label>
-    </div> -->
+    </div>
         <input type="text" id="userName" name="userName" class="form-control" ><br>
        
 
@@ -62,7 +88,7 @@
 		<button type="submit" class="btn btn-primary" onclick="displayInfo()">Edit</button><br>
 	 
 	 </div>	
-		
+	
    
     
   </body>

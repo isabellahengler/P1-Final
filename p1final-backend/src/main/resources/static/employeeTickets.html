@@ -6,17 +6,20 @@
 <link rel="stylesheet" href="./style.css">
 <script src="Javascript/employee.js"> </script>
 	<center>
-<body> 
+ 
+  <body> 
     <h1>View Requests</h1> 
+	
+	
 	
 	
 	<div class="container" id="formDiv">
     	
-    	<label for="acctid">Please Enter Your Account Id To View Your Requests :</label><br>
+    	<label for="acctid">Enter Your Account Id To View Your Requests :</label><br>
         <input type="text" id="acctId" name="acctId" class="form-control" ><br>
        
 
-		<button type="submit" class="btn btn-primary" onclick="employeeInfo()">Submit</button><br>
+		<button type="submit" class="btn btn-primary" onclick="employeeInfoById()">Submit</button><br>
 	
 	 </div>	<br>
 	 
@@ -39,12 +42,12 @@
         </tr>
       </thead>
       <tbody id="idRembBody">
-        <!-- Data dynamically populated -->
+       <!--  Data dynamically populated -->
      
         
       </tbody>
     </table>
-	 
+	  
 	 
 	 
 	 

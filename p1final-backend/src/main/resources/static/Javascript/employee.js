@@ -57,7 +57,7 @@ async function newReimbursementReq() {
 	
 }
 
-async function empInfoById() {
+async function employeeInfoById() {
 	
 	let input = document.getElementById("acctId").value;
 	

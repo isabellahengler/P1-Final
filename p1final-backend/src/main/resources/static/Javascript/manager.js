@@ -92,10 +92,47 @@ async function managerViewbyID() {
 }
 }
 
+async function updateStatus() {
+	
+	var reqId = document.getElementById("reqId").value;
+	
+	var newStatus = document.getElementById("reqStatus").value;
+	
+	
+	let response = await fetch(`/reimbursement/${reqId}`, {
+		 method: "PUT",
+  		headers: {'Content-Type': 'application/json'}, 
+  		body: newStatus
+	});
+	
+	if(response.status !== 200) {
+			
+			//if login attempt fails
+			alert("Failed to Update");
+		}
+		
+		else {
+			
+			
+			alert("Updated Successfully!") 
+		}
+		
+	  console.log("Request complete! response:", response);
+	
+	
+	
+}
+
 function signOut() {
 	window.location="index.html"; 
+	
 
 	
+}
+
+function approveDeny() {
+	
+	window.location="approveDeny.html";
 }
 
 function viewbyID(){
