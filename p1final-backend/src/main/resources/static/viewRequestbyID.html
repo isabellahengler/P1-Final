@@ -2,25 +2,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>P1 Employee Portal</title>
-<link rel="stylesheet" href="./style.css">
-<script src="Javascript/employee.js"> </script>
+<title>Insert title here</title>
+	<script src="Javascript/manager.js"> </script>
+	<link rel="stylesheet" href="./style.css">
 	<center>
-<body> 
-    <h1>View Requests</h1> 
-	
+</head>
+
+  <body> 
+    <h1>View Requests By ID</h1> 
+
 	
 	<div class="container" id="formDiv">
     	
-    	<label for="acctid">Please Enter Your Account Id To View Your Requests :</label><br>
-        <input type="text" id="acctId" name="acctId" class="form-control" ><br>
+	
+		
+		<label for="empId"> Enter Employee Id to View Request :</label><br>
+        <input type="text" id="empId" name="empId" class="form-control" ><br>
        
 
-		<button type="submit" class="btn btn-primary" onclick="employeeInfo()">Submit</button><br>
-	
-	 </div>	<br>
-	 
-	 <div class="container" id="formDiv">
+		<button type="submit" class="btn btn-primary" onclick="managerViewbyID()">Submit</button><br>
+    </div>	<br>
+    
+     <div class="container" id="formDiv">
 	 
 	 <table id="table" class="table table-hover">
       <thead>

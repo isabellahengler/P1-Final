@@ -27,7 +27,7 @@ async function employeeTable() {
 }
 }
 
-async function reimbersementTable() {
+async function reimbursementTable() {
 	
 	let response = await fetch('/reimbursement');
 	
@@ -57,4 +57,56 @@ async function reimbersementTable() {
 
         </tr>`;
 }
+}
+async function managerViewbyID() {
+	
+	let input = document.getElementById("empId").value;
+	
+	let response = await fetch(`/users/${input}/reimbursement`);
+	
+	let idRembList = await response.json();
+	
+	let idRembBody = document.getElementById("idRembBody");
+	
+	console.log(idRembList);
+
+	for(let index = 0; index < idRembList.length; index++) {
+		
+		let element = idRembList[index];
+		
+		idRembBody.innerHTML +=
+		`
+		<tr>
+      
+        <td class = "text-center">${element.id}</td>
+        <td class = "text-center">${element.amount}</td>
+        <td class = "text-center">${element.description}</td>
+        <td class = "text-center">${element.author}</td>
+        <td class = "text-center">${element.submitted}</td>
+        <td class = "text-center">${element.resolved}</td>
+        <td class = "text-center">${element.resolver}</td>
+        <td class = "text-center">${element.status}</td>
+        <td class = "text-center">${element.type}</td>
+
+        </tr>`;
+}
+}
+
+function signOut() {
+	window.location="index.html"; 
+
+	
+}
+
+function viewbyID(){
+	window.location="viewRequestbyID.html";
+	
+}
+function viewAllEmployees() {
+	window.location="viewAllEmployees.html";
+}
+
+function viewAllRequests() {
+	
+window.location="managerAllRequests.html"; 
 }

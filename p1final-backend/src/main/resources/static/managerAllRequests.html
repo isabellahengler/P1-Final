@@ -2,53 +2,49 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>P1 Employee Portal</title>
+<title>Insert title here</title>
 <link rel="stylesheet" href="./style.css">
-<script src="Javascript/employee.js"> </script>
-	<center>
-<body> 
-    <h1>View Requests</h1> 
+	<script src="Javascript/manager.js"> </script>
+<center>
+</head>
+
+  <body onload="reimbursementTable()"> 
+    <h1>View All Requests</h1> 
 	
 	
 	<div class="container" id="formDiv">
     	
-    	<label for="acctid">Please Enter Your Account Id To View Your Requests :</label><br>
-        <input type="text" id="acctId" name="acctId" class="form-control" ><br>
-       
-
-		<button type="submit" class="btn btn-primary" onclick="employeeInfo()">Submit</button><br>
-	
-	 </div>	<br>
-	 
-	 <div class="container" id="formDiv">
-	 
-	 <table id="table" class="table table-hover">
+    	
+    	<table id="table" class="table table-hover">
       <thead>
         <tr>
-           <th class="text-center">Id</th>
+          <th class="text-center">Id</th>
           <th class="text-center">Amount</th>
           <th class="text-center">Description</th>
           <th class="text-center">Author</th>
           <th class="text-center">Date Submitted</th>
-          <th class="text-center">Date Approved</th>   
+          <th class="text-center">Date Approved</th>          
           <th class="text-center">Resolver</th>
           <th class="text-center">Status</th>
           <th class="text-center">Type</th>
           
+
           
         </tr>
       </thead>
-      <tbody id="idRembBody">
+      <tbody id="rembBody">
         <!-- Data dynamically populated -->
      
         
       </tbody>
     </table>
-	 
-	 
-	 
-	 
-	 </div>
+  </div>
+    	
+	
+	 </div>	
+    	
+	
+	 </div>	
 		
    
     
