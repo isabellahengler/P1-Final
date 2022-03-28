@@ -4,27 +4,28 @@
 <meta charset="UTF-8">
 <title>P1 Employee Portal</title>
 <link rel="stylesheet" href="./style.css">
-<script src="Javascript/login.js"> </script>
+<script src="Javascript/employee.js"> </script>
 </head>
 <div class="center">
   <h1>Welcome To The Employee Portal</h1>
-  <form method="post">
+    <form>
     
-      <input type="submit" value="View Current Tickets">
+      <input type="submit" value="View Current Tickets" onclick="viewTicket()">
     
     <div >
       <input type="submit" value="New Reimbursement Request">
     </div>
     
       <div >
-      <input type="submit" value="View/Update Personal Info">
+  <!--     <input type="submit" value="View/Update Personal Info" onclick="employeeInfo()"> -->
     </div>
     
       <div >
       <!-- <button type="submit" onclick="signOut()";>Log Out</button><br> -->
     <!--  <input type="submit" value="SignOut" onclick="signOut()">  -->
     </div>
-  </form>
+       </form>
+        <input type="submit" value="View/Update Personal Info" onclick="employeeInfo()">
   <input type="submit" value="SignOut" onclick="signOut()"> 
 </div>
   <base href="/">
