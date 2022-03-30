@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.revature.p1backend.model.Reimbursement;
 import com.revature.p1backend.repo.ReimbursementRepository;
@@ -38,7 +39,7 @@ public class ReimbursementServiceImpl implements ReimbursementService {
 		// TODO Auto-generated method stub
 		return reimbursementRepository.findByStatus(3);
 	}
-
+@PostMapping
 	public Reimbursement updateReimbursementStatus(int id, int status) {
 		Reimbursement reimburse = null;
 		reimburse = findById(id);
@@ -54,7 +55,8 @@ public class ReimbursementServiceImpl implements ReimbursementService {
 		// TODO Auto-generated method stub
 		return reimbursementRepository.findByAuthor(id);
 	}
-
+// if u impl from interface u need to override 
+@Override
 
 public Reimbursement newRemb(Reimbursement r) {
 //	Reimbursement remb = null;

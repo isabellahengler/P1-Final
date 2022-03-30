@@ -18,4 +18,6 @@ public interface ReimbursementService {
 	
 	public List<Reimbursement> findByAuthor(int id);
 
+	public Reimbursement newRemb(Reimbursement r);
+
 }

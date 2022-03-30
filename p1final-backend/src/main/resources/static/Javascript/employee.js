@@ -23,6 +23,7 @@ async function displayInfo() {
 }
 
 
+
 async function newReimbursementReq() {
 	
 	let amount = document.getElementById("amount").value;
@@ -57,6 +58,7 @@ async function newReimbursementReq() {
 	
 }
 
+
 async function employeeInfoById() {
 	
 	let input = document.getElementById("acctId").value;
@@ -89,7 +91,7 @@ async function employeeInfoById() {
 
         </tr>`;
 }
-
+}
 async function updateInfo() {
 	
 	let id = document.getElementById("userId").value;
@@ -130,7 +132,8 @@ async function updateInfo() {
 	
 }
 
-}
+
+
 function employeeInfo() {
 	
 	window.location="employeeInfo.html"; 
